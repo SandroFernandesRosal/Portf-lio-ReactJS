@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body, html {
+  
+  background-color: #0e0e0e;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-x: hidden;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+body::-webkit-scrollbar-track {
+  background-color: gray; 
+  border-radius: 10px;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  
+  background-color:  green;
+  border-radius: 10px;
+  border: 3px solid gray;
+  
+}
+
+@media (min-width: 800px) {
+
+
+.App {
+  display: flex;
+}
+
+
+
+.perfil-home {
+  width: 100%;
+}
+ 
+}

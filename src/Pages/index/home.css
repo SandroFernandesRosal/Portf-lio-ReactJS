@@ -1,0 +1,113 @@
+.perfil-home {
+  background-image: url(./img/img-bgperfil.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  
+ 
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.sobre span {
+  color: green;
+  font-size: 65px;
+  font-family: 'Ms Madi', cursive;
+}
+
+.sobre {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.sobre button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid green;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  
+  outline: none;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.sobre button:hover {
+  background-color: green;
+  
+}
+
+.container-skills {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.container-skills h2 {
+ font-size: 40px;
+  margin: 10px 0;
+  border-bottom: 2px solid green;
+  
+}
+
+.item-skills {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.item-skills:hover {
+  background-color: green;
+}
+
+.skills svg {
+ font-size: 60px;
+}
+
+.perfil-home .sociais svg {
+ margin: 10px;
+}
+
+.saiba-mais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.saiba-mais spam {
+  font-size: 25px;
+  color: green;
+  margin: 5px 0;
+}
+
+.saiba-mais svg {
+  font-size: 60px;
+}

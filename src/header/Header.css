@@ -1,0 +1,182 @@
+ .header {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #0e0e0e;
+  
+  
+}
+
+.logo:hover {
+  background-color: green;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:  black;
+  color: white;
+  height: 80px;
+  width: 30vw;
+  border: 1px solid green;
+  position: fixed;
+}
+
+.menu-mobile  {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0e0e0e;
+    z-index: 2;
+    animation-name: menu;
+    animation-duration: 0.7s;
+    position: fixed;
+}
+
+@keyframes menu {
+  from{
+    height: 0vh ;
+
+  }
+
+  to {
+height: 100vh;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.menu-mobile li {
+  cursor: pointer;
+  background-color: black;
+  font-size: 22px;
+  
+  text-align: center;
+  
+}
+
+.menu-mobile li:hover { 
+  background-color: green;
+  transition: 0.7s;
+}
+
+
+
+.botao-menu  {
+  
+  outline:none;
+  cursor: pointer;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #0e0e0e;
+  border: 1px solid green;
+}
+
+.botao-menu svg {
+  font-size: 40px;
+  color: white;
+}
+
+.botao-menu:hover {
+  background-color: green;
+  
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-perfil {
+  width: 95%;
+  height: 350px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  border: 1px solid green;
+  
+}
+
+.card-perfil p {
+  text-align: center;
+}
+
+.card-perfil img {
+  width: 170px;
+  border-radius: 85px;
+  border: 4px solid green;
+}
+
+header .sociais {
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+}
+
+.sociais svg {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.sociais svg:hover {
+  color: green;
+}
+
+
+@media (min-width: 800px) {
+  .menu-mobile {
+    width: 30vw;
+    border-right: 1px solid green;
+    animation-name: menu;
+    animation-duration: 1s;
+    position: inherit;
+
+  }
+
+  @keyframes menu {
+    from {
+      width: 0vw;
+      height: 0vh;
+    }
+    to {
+       width: 30vw;
+       height: 100vh;
+      }
+  }
+
+  
+
+ 
+}
