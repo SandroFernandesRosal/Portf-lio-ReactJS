@@ -1,0 +1,96 @@
+.sobre {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 100px;
+  animation-name: sobre;
+  animation-duration: 2s;
+
+}
+
+@keyframes sobre {
+  from {
+    width: 0vw;
+    
+  }
+  to {
+     width: 100vw;
+     
+    }
+}
+
+.formation {
+  list-style: none;
+ 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.formation h2 {
+  font-size: 40px;
+  margin: 10px 0;
+  border-bottom: 2px solid green;
+  align-self: center;
+  
+}
+
+.formation li {
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-start;
+ 
+ border-left: 1px groove gray;
+ padding-left: 10px;
+ 
+ 
+}
+
+
+
+.formation li h3, .formation li h4 {
+ position: relative;
+ top: -65px
+}
+
+.formation li h4 {
+  color: green;
+}
+
+
+.formation li::before {
+  content: ".";
+  position: relative;
+  left: -20px;
+  font-size: 54px;
+  color: green;
+  top: -43px;
+  
+}
+
+@media (min-width: 800px) {
+  .sobre {
+    margin: 0;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 100px;
+    
+    
+  }
+
+  .formation {
+    flex:1;
+    
+    
+  }
+
+
+
+  .container-skills {
+    flex:1;
+  
+  }
+}

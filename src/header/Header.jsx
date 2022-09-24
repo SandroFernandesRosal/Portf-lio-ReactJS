@@ -15,8 +15,10 @@ export const Header = () => {
   const showOrHide = () => setShowMenu(true)
 const hideMenu = () => setShowMenu(false)
 
+
+
   return(
-   <header className="header">
+   <header className="header" >
        <nav>
 
        
@@ -28,14 +30,14 @@ const hideMenu = () => setShowMenu(false)
      
        </nav>
              { showMenu &&
-                <ul className="menu-mobile">
+                <ul className="menu-mobile" onClick={hideMenu}>
                   <button className="botao-menu">
                     <AiOutlineClose onClick={hideMenu}  />
                   </button>
 
                   <Card img={FotoPerfil} title="Desenvolvedor Front-End JR" cidade="Rio de Janeiro, RJ" nome="Sandro Fernandes"/>
 
-             <MenuMobile />
+             <MenuMobile  />
              
 </ul> }
    

@@ -33,7 +33,7 @@
   background-color:  black;
   color: white;
   height: 80px;
-  width: 30vw;
+  width: 45vw;
   border: 1px solid green;
   position: fixed;
 }
@@ -160,19 +160,23 @@ header .sociais {
     width: 30vw;
     border-right: 1px solid green;
     animation-name: menu;
-    animation-duration: 1s;
+    animation-duration: 2s;
     position: inherit;
 
   }
 
+  .header nav {
+    width: 30vw;
+  }
+
   @keyframes menu {
     from {
-      width: 0vw;
-      height: 0vh;
+      width: 15vw;
+     
     }
     to {
        width: 30vw;
-       height: 100vh;
+      
       }
   }
 

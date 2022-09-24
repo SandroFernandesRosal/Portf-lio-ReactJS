@@ -11,17 +11,17 @@
  
 }
 
-h1 {
-  font-size: 30px;
+.home h1, .home h2 {
+  font-size: 22px;
 }
 
-.sobre span {
+.home span {
   color: green;
-  font-size: 65px;
+  font-size: 47px;
   font-family: 'Ms Madi', cursive;
 }
 
-.sobre {
+.home {
   
   display: flex;
   flex-direction: column;
@@ -31,7 +31,12 @@ h1 {
 
 }
 
-.sobre button {
+.home a {
+
+  text-align: center;
+ 
+}
+.home  button {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid green;
@@ -44,7 +49,7 @@ h1 {
   margin: 15px;
 }
 
-.sobre button:hover {
+.home button:hover {
   background-color: green;
   
 }
@@ -110,4 +115,16 @@ h1 {
 
 .saiba-mais svg {
   font-size: 60px;
+}
+
+@media (min-width: 700px) {
+
+.home span {
+  font-size: 65px;
+}
+
+.home h1, .home h2 {
+  font-size: 32px;
+}
+
 }
