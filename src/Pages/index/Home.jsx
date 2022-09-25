@@ -12,7 +12,8 @@ export const Home = () => {
       
 
            <div className="home"> 
-               <h1>Olá, eu sou o <br/><span>Sandro Fernandes</span></h1>
+               <h1>Olá, eu sou o </h1>
+               <span>Sandro Fernandes</span>
                <h2>Desenvolvedor Front-End JR</h2>
                
                <a download href="src\Pages\index\Sandro Fernandes - Dev Front-End  (1).pdf" target="blank"> 
