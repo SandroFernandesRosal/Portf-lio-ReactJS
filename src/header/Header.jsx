@@ -16,12 +16,7 @@ export const Header = () => {
   const hideMenu = () => setShowMenu(false)
 
   
- 
 
- const HideTopo = () => {
-  let nav = document.querySelector(".nav")
-  nav.style.display="none"
- }
  
   return(
    <header className="header" >

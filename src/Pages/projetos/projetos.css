@@ -1,0 +1,83 @@
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  animation-name: projetos;
+  animation-duration: 2s;
+}
+
+@keyframes projetos {
+  from {
+    width: 0vw;
+    
+  }
+  to {
+     width: 100vw;
+     
+    }
+}
+
+.projetos h1 {
+  border-bottom: 2px solid green;
+  margin-bottom: 20px;
+}
+
+.projetos-container {
+  list-style: none;
+  display: flex;
+  
+  width: 220px;
+  height: 400px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+.projetos-container li {
+ width: 200px;
+ 
+ border: 1px solid green;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ background-color: black;
+ border-radius: 10px;
+ margin: 0px 10px;
+ flex: none;
+ 
+}
+
+
+
+.projetos-container img {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+}
+
+.projetos-container button {
+  background-color: green;
+  outline: none;
+  width: 50%;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.container-setas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.container-setas svg {
+  font-size: 40px;
+  
+}

@@ -1,0 +1,81 @@
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  
+  width: 100vw;
+  height: 100vh;
+  animation-name: contato;
+  animation-duration: 2s;
+  
+}
+
+@keyframes contato {
+  from {
+    width: 0vw;
+    
+  }
+  to {
+     width: 100vw;
+     
+    }
+}
+
+.contato h1 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid green;
+  
+}
+
+.contato .sociais {
+  width: 75%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: black;
+  width: 75%;
+  max-width: 500px;
+  border-radius: 15px 0px 15px 0px;
+  padding: 15px;
+  border: 1px solid green;
+  margin-top: 10px;
+  
+}
+
+.contato form input, textarea {
+ margin: 3px;
+ padding: 5px;
+ text-align: center;
+ background-color: black;
+ color: white;
+ border: 2px solid green;
+ border-radius: 15px 0px 15px 0px;
+ cursor: pointer;
+}
+
+.contato form button {
+  width: 40%;
+  height: 10%;
+  margin:10px auto;
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px solid green;
+  cursor: pointer;
+ 
+}
+
+.contato form button:hover {
+background-color: green;
+color: white;
+}
