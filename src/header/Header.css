@@ -17,7 +17,7 @@
   align-items: center;
   font-size: 17px;
   font-weight: 600;
-  background-color: #0e0e0e;
+  background-color: transparent;
   text-align: center;
   
   
@@ -38,6 +38,7 @@
   border-bottom: 1px solid green;
   border-right: 1px solid green;
   position: fixed;
+  z-index: 55;
 }
 
 .menu-mobile  {
@@ -49,7 +50,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #0e0e0e;
-    z-index: 2;
+    z-index: 72;
     animation-name: menu;
     animation-duration: 0.7s;
     position: fixed;
@@ -97,7 +98,7 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background-color: #0e0e0e;
+  background-color: transparent;
   border: 1px solid green;
 }
 

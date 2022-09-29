@@ -1,53 +1,79 @@
 import "./projetos.css"
-import RpzNovo from "./img/rpz-novo.png"
-import RpzAntigo from "./img/rpz-antigo.png"
-import PortfolioAntigo from "./img/portfolio-antigo.png"
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { useRef } from "react"
+
+import { DataProjetos } from "./DataProjeto"
+import { useState } from "react"
+
+
 
 export const Projetos = () => {
 
-  const Carousel = useRef(null)
-
-  const prevSlide = (e) => {
-    e.preventDefault();
-    
-    Carousel.current.scrollLeft -= Carousel.current.offsetWidth;
-   
- }
-
- const nextSlide = (e) => {
-   e.preventDefault(); 
-  
-    Carousel.current.scrollLeft  += Carousel.current.offsetWidth;
-   
- }
-
-  const CardProjeto = (props) => {
-
-    return(
-      <li>
-        <img src={props.img}/>
-        <button>Acessar</button>
-        <button>Repositório</button>
-      </li>
-    )
+  const displayNone = {
+    display: "none"
   }
+  const displayFlex = {
+  display: "flex"
+  }  
+
+ 
+
+  const [showdisplay, setShowDisplay] = useState(false)
+  const show = () => setShowDisplay(true)
+  const hide = () => setShowDisplay(false)
+
+
+
 
   return(
     <section className="projetos">
     <h1>Meus Projetos</h1>
     
-    <div className="container-setas">
-    <FaArrowLeft onClick={prevSlide} />
-    <ul className="projetos-container"  ref={Carousel}>
-    <CardProjeto img={RpzNovo}/>
-    <CardProjeto img={RpzAntigo}/>
-    <CardProjeto img={PortfolioAntigo}/>
+    
 
+    
+
+    <ul className="projetos-container">
+     {DataProjetos.map((projeto, index) => 
+     {
+     
+      return(
+    <li key={index} >
+        <img src={projeto.img} onClick={() => show(projeto.id)} />
+
+        { showdisplay && 
+        <div className="saiba-mais-card"  > 
+        <button onClick={hide}>X</button>
+        <div>
+        <h1>{projeto.saiba}</h1> 
+        
+        <p>{projeto.tecnologia}</p>
+        </div>
+        </div>
+        }
+        <div className="buttons">
+
+            <button onClick={() => show(projeto.id)}>+ Info</button>
+
+            <div>
+              <a href={projeto.acessar} target="_blank">
+               <button>Ir</button>
+              </a>
+            </div>
+
+            <div>
+              <a href={projeto.repositorio} target="_blank">
+               <button>Repo</button>
+              </a>
+            </div>
+        </div>
+      </li>
+)
+
+     })}
     </ul>
-    <FaArrowRight onClick={nextSlide} />
-    </div>
+
+    
+    
+    
     </section>
   )
 }

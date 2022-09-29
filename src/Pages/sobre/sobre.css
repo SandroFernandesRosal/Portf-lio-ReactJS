@@ -24,7 +24,7 @@
 
 .formation {
   list-style: none;
- 
+  width: 300px;
   display: flex;
   flex-direction: column;
   
@@ -42,18 +42,17 @@
   display: flex;
   flex-direction: column;
  justify-content: flex-start;
- 
  border-left: 1px groove gray;
  padding-left: 10px;
- 
  
 }
 
 
 
 .formation li h3, .formation li h4 {
- position: relative;
- top: -65px
+  position: relative;
+  top: -65px;
+  
 }
 
 .formation li h4 {
@@ -75,15 +74,14 @@
   .sobre {
     margin: 0;
     flex-direction: row;
-    align-items: stretch;
-    margin-top: 100px;
+    align-items: center;
+    
     
     
   }
 
   .formation {
     flex:1;
-    
     
   }
 
