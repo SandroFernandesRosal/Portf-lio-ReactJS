@@ -11,6 +11,8 @@
  
 }
 
+
+
 .home h1, .home h2 {
   font-size: 19px;
 }
@@ -82,47 +84,7 @@
   
 }
 
-.container-skills {
-  display: flex;
-  flex-direction: column;
-   align-items: center;
-  
-}
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.container-skills h2 {
- font-size: 40px;
-  margin: 10px 0;
-  border-bottom: 2px solid green;
-  
-}
-
-.item-skills {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.7s;
-}
-
-.item-skills:hover {
-  background-color: green;
-}
-
-.skills svg {
- font-size: 60px;
-}
 
 .perfil-home .sociais svg {
  margin: 10px;

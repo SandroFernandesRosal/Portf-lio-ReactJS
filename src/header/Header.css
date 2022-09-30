@@ -25,6 +25,7 @@
 
 .logo:hover {
   background-color: green;
+  transition: 0.7s
 }
 
 .header nav {
@@ -91,7 +92,9 @@ a {
 
 
 .botao-menu  {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline:none;
   cursor: pointer;
   border: none;
@@ -109,7 +112,7 @@ a {
 
 .botao-menu:hover {
   background-color: green;
-  
+  transition: 0.7s
 }
 
 .card-container {
@@ -166,6 +169,7 @@ header .sociais  {
   .menu-mobile {
     width: 30vw;
     border-right: 1px solid green;
+    border-bottom: 1px solid green;
     animation-name: menu;
     animation-duration: 2s;
     position: inherit;

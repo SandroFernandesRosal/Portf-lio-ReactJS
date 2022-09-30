@@ -1,11 +1,12 @@
 .sobre {
-  height: 100vh;
+  
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 100px ;
+  margin-bottom: 20px;
   animation-name: sobre;
   animation-duration: 2s;
 
@@ -20,6 +21,48 @@
      width: 100vw;
      
     }
+}
+
+.container-skills {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.container-skills h2 {
+ font-size: 40px;
+  margin: 10px 0;
+  border-bottom: 2px solid green;
+  
+}
+
+.item-skills {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.item-skills:hover {
+  background-color: green;
+}
+
+.skills svg {
+ font-size: 60px;
 }
 
 .formation {
@@ -75,14 +118,14 @@
     margin: 0;
     flex-direction: row;
     align-items: center;
-    
+    height: 100vh;
     
     
   }
 
   .formation {
     flex:1;
-    
+    height: 300px;
   }
 
 

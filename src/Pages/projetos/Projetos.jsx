@@ -1,5 +1,8 @@
 import "./projetos.css"
-
+import {FaExternalLinkAlt} from "react-icons/fa"
+import {BsInfoSquare} from "react-icons/bs"
+import {FaGithub}  from "react-icons/fa"
+import {AiOutlineClose} from "react-icons/ai"
 import { DataProjetos } from "./DataProjeto"
 import { useState } from "react"
 
@@ -41,7 +44,7 @@ export const Projetos = () => {
 
         { showdisplay && 
         <div className="saiba-mais-card"  > 
-        <button onClick={hide}>X</button>
+        <button onClick={hide}><AiOutlineClose /></button>
         <div>
         <h1>{projeto.saiba}</h1> 
         
@@ -51,17 +54,17 @@ export const Projetos = () => {
         }
         <div className="buttons">
 
-            <button onClick={() => show(projeto.id)}>+ Info</button>
+            <button onClick={() => show(projeto.id)}><BsInfoSquare /></button>
 
             <div>
               <a href={projeto.acessar} target="_blank">
-               <button>Ir</button>
+               <button><FaExternalLinkAlt /></button>
               </a>
             </div>
 
             <div>
               <a href={projeto.repositorio} target="_blank">
-               <button>Repo</button>
+               <button><FaGithub /></button>
               </a>
             </div>
         </div>
