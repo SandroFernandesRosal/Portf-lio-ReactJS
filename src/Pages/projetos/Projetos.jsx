@@ -10,51 +10,39 @@ import { useState } from "react"
 
 export const Projetos = () => {
 
-  const displayNone = {
-    display: "none"
-  }
-  const displayFlex = {
-  display: "flex"
-  }  
-
- 
-
   const [showdisplay, setShowDisplay] = useState(false)
   const show = () => setShowDisplay(true)
   const hide = () => setShowDisplay(false)
-
-
-
 
   return(
     <section className="projetos">
     <h1>Meus Projetos</h1>
     
-    
-
-    
-
     <ul className="projetos-container">
+
      {DataProjetos.map((projeto, index) => 
      {
      
       return(
+
     <li key={index} >
-        <img src={projeto.img} onClick={() => show(projeto.id)} />
+        <img src={projeto.img} onClick={show} />
 
         { showdisplay && 
         <div className="saiba-mais-card"  > 
-        <button onClick={hide}><AiOutlineClose /></button>
-        <div>
-        <h1>{projeto.saiba}</h1> 
-        
-        <p>{projeto.tecnologia}</p>
-        </div>
+            <button onClick={hide}><AiOutlineClose /></button>
+
+            <div>
+                <h1>{projeto.saiba}</h1> 
+                <p>{projeto.tecnologia}</p>
+            </div>
+
         </div>
         }
+
         <div className="buttons">
 
-            <button onClick={() => show(projeto.id)}><BsInfoSquare /></button>
+            <button onClick={show}><BsInfoSquare /></button>
 
             <div>
               <a href={projeto.acessar} target="_blank">
@@ -67,6 +55,7 @@ export const Projetos = () => {
                <button><FaGithub /></button>
               </a>
             </div>
+
         </div>
       </li>
 )
@@ -74,9 +63,6 @@ export const Projetos = () => {
      })}
     </ul>
 
-    
-    
-    
     </section>
   )
 }

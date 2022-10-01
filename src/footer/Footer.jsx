@@ -5,8 +5,9 @@ export const Footer = () => {
 
   return(
     <footer>
-      <div>Todos os direitos reservados.</div>
-    <div> Sandro Fernandes - Desenvolvedor Front-End</div>
+      
+    <div> Sandro Fernandes </div> 
+    <div>Desenvolvedor Front-End</div>
     
     </footer>
   )

@@ -2,11 +2,13 @@ import React from "react"
 import "./Header.css"
 import { Card } from "./card"
 import FotoPerfil from "./img/foto-perfil.jpg"
+import Logo from "./img/logo-11.png"
 import { MenuMobile } from "./MenuMobile"
 import { useState, useRef } from "react"
 import {AiOutlineClose} from "react-icons/ai"
 import {GiHamburgerMenu} from "react-icons/gi"
 import { Link } from "react-router-dom"
+
 
 
 export const Header = () => {
@@ -23,7 +25,9 @@ export const Header = () => {
        <nav className="nav">
 
        
-          <div className="logo"><Link to="/">&lt; SF /&gt;</Link></div>
+          <div className="logo"><Link to="/">
+            <img src={Logo} />
+            </Link></div>
        
              <button className="botao-menu">
               <GiHamburgerMenu onClick={showOrHide} />
