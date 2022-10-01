@@ -24,8 +24,8 @@ export const Sobre = () => {
         <h2>Formação</h2>
      
         <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 2° Período" />
-        <ItemEstudo title="React JS" sub="Rocketseat" />
-        <ItemEstudo title="HTML, CSS e Javascript" sub="Rocketseat, Origamid, Curso em vídeo" />
+        <ItemEstudo title="React JS" sub="Rocketseat e Origamid" />
+        <ItemEstudo title="HTML, CSS e Javascript" sub="Rocketseat, Origamid e Curso em vídeo" />
         
       </ul>
     </section>

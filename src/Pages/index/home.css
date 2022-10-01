@@ -84,11 +84,11 @@
   
 }
 
-
-
-.perfil-home .sociais svg {
- margin: 10px;
+.home .sociais {
+  width: 60%;
 }
+
+
 
 .saiba-mais {
   display: flex;

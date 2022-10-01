@@ -47,6 +47,19 @@
   border-right: 1px solid green;
   position: fixed;
   z-index: 55;
+  animation-name: nav;
+    animation-duration: 0.7s;
+}
+
+@keyframes nav {
+  from {
+    width: 0vw;
+    
+  }
+  to {
+     width: 45vw;
+     
+    }
 }
 
 .menu-mobile  {
@@ -128,7 +141,8 @@ a {
 }
 
 .card-perfil {
-  width: 95%;
+  width: 65%;
+  max-width: 390px;
   height: 350px;
   background-color: black;
   color: white;
@@ -148,17 +162,20 @@ a {
 }
 
 .card-perfil img {
-  width: 170px;
+  width: 60%;
   border-radius: 85px;
   border: 4px solid green;
 }
 
-header .sociais  {
+ .sociais  {
  width: 100%;
  display: flex;
  justify-content: space-around;
- 
+ text-align: center;
 }
+
+
+
 
 .sociais svg {
   font-size: 35px;
@@ -183,9 +200,24 @@ header .sociais  {
 
   }
 
+  .card-perfil {
+    width: 65%;
+  }
+
   .header nav {
     width: 30vw;
   }
+
+  @keyframes nav {
+    from {
+      width: 0vw;
+     
+    }
+    to {
+       width: 30vw;
+      
+      }
+    }
 
   @keyframes menu {
     from {

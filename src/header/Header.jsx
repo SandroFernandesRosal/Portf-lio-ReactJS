@@ -14,15 +14,15 @@ import { Link } from "react-router-dom"
 export const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false)
-  const showOrHide = () => setShowMenu(true)
-  const hideMenu = () => setShowMenu(false)
+  const [hidenav , setHideNav] = useState(true)
 
-  
 
  
   return(
    <header className="header" >
-       <nav className="nav">
+
+    {hidenav && 
+       <nav className="nav" >
 
        
           <div className="logo"><Link to="/">
@@ -30,19 +30,21 @@ export const Header = () => {
             </Link></div>
        
              <button className="botao-menu">
-              <GiHamburgerMenu onClick={showOrHide} />
-             </button>
+              <GiHamburgerMenu onClick={() => {setShowMenu(true); setHideNav(false)} }  />
+             </button> 
      
        </nav>
+       }
+
              { showMenu &&
-                <ul className="menu-mobile" onClick={hideMenu}>
+                <ul className="menu-mobile" onClick={() => { setShowMenu(false); setHideNav(true) }}>
                   <button className="botao-menu">
-                    <AiOutlineClose onClick={hideMenu}  />
+                    <AiOutlineClose onClick={() => setShowMenu(false)}  />
                   </button>
 
                   <Card img={FotoPerfil} title="Desenvolvedor Front-End JR" cidade="Rio de Janeiro, RJ" nome="Sandro Fernandes"/>
 
-             <MenuMobile  />
+             <MenuMobile/>
              
 </ul> }
    

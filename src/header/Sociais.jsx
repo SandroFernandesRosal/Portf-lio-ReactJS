@@ -5,24 +5,30 @@ export const Sociais = () => {
   return(
     <div className="sociais">
 
+   <a href="https://api.whatsapp.com/send?phone=5521969501614" target="blank">
+      <FaWhatsapp />
+   </a>  
     
-    <FaWhatsapp> <a href="https://api.whatsapp.com/send?phone=5521969501614" target="blank"></a> </FaWhatsapp>  
-
+        
     
-
-    
-    <FaLinkedin><a href="https://www.linkedin.com/in/sandro-fernandes-rosal-33365b240/" target="blank"></a> </FaLinkedin>
-    
-
-    
-    <FaGithub><a href="https://github.com/SandroFernandesRosal" target="blank"></a></FaGithub>
-    
-
-    
-    <FaFacebook><a href="http://www.facebook.com/rpzfc" target="blank"></a></FaFacebook> 
+        
+    <a href="https://www.linkedin.com/in/sandro-fernandes-rosal-33365b240/" target="blank">
+      <FaLinkedin />
+    </a> 
     
     
     
-    </div>
+    <a href="https://github.com/SandroFernandesRosal" target="blank">
+     <FaGithub />
+    </a>
+    
+    
+    
+    <a href="http://www.facebook.com/rpzfc" target="blank">
+      <FaFacebook />
+    </a>
+    
+    
+        </div>
   )
 }

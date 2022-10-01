@@ -1,5 +1,5 @@
 import "./home.css"
-import { Sociais } from "../../header/sociais"
+import { Sociais } from "../../header/Sociais"
 import {FaAngleDoubleDown} from "react-icons/fa"
 import { Link } from "react-router-dom"
 
@@ -20,7 +20,7 @@ export const Home = () => {
                    <button> Download CV </button> 
                </a>   
                
-               <Sociais className="sociais-home"/>
+               <Sociais />
 
                <Link to="/sobre">
                <div className="saiba-mais">

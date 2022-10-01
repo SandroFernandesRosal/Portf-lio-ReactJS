@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contato.css"
 import { Sociais } from "../../header/Sociais";
-import {MdAlternateEmail} from "react-icons/md"
+
 
 
 export const Contato = () => {
@@ -18,14 +18,21 @@ export const Contato = () => {
 
  const onSubmit = (e) => {
   e.preventDefault();
+  
 
     emailjs.sendForm('gmailsfr', 'template_mumsd62', form.current, 'n_VePloj0wX6t-MH9')
       .then(() => {
           alert('Mensagem enviada com sucesso! :)');
+          
       }, (error) => {
           alert(error.mensagem);
       });
-      e.target.reset();
+      setNameInput('');
+      setEmailInput('');
+      setAssuntoInput('');
+      setTextInput('');
+      
+      
  }
 
 
