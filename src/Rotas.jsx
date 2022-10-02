@@ -10,7 +10,7 @@ export const Rotas = () => {
 
   return(
 <>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter >
     <Header />
     <Routes>
     <Route element = {<Home />}  path="/" exact />
