@@ -75,7 +75,7 @@
 
 .formation h2 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 00px 20px 0px;
   border-bottom: 2px solid green;
   align-self: center;
   
@@ -86,7 +86,7 @@
   flex-direction: column;
  justify-content: flex-start;
  border-left: 1px groove gray;
- padding-left: 10px;
+ padding-left: 12px;
  
 }
 
@@ -94,7 +94,7 @@
 
 .formation li h3, .formation li h4 {
   position: relative;
-  top: -65px;
+  top: -75px;
   
 }
 
@@ -107,9 +107,9 @@
   content: ".";
   position: relative;
   left: -20px;
-  font-size: 54px;
+  font-size: 60px;
   color: green;
-  top: -43px;
+  top: -50px;
   
 }
 
