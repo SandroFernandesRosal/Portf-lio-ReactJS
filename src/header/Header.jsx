@@ -38,9 +38,17 @@ export const Header = () => {
 
              { showMenu &&
                 <ul className="menu-mobile" onClick={() => { setShowMenu(false); setHideNav(true) }}>
+            
+            <div className="buttons-menu-mobile">
+                 <div className="logo">
+                    <Link to="/">
+                      <img src={Logo} />
+                    </Link>
+                 </div>
                   <button className="botao-menu">
                     <AiOutlineClose onClick={() => setShowMenu(false)}  />
                   </button>
+            </div>
 
                   <Card img={FotoPerfil} title="Desenvolvedor Front-End JR" cidade="Rio de Janeiro, RJ" nome="Sandro Fernandes"/>
 

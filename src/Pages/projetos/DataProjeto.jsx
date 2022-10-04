@@ -6,7 +6,7 @@ export const DataProjetos = [
   {img: "../img/portfolio-novo.png",
   saiba: "Meu Portfólio atual",
   tecnologia: "Projeto feito em ReactJS. Fiz esse projeto com a intenção de fazer um portfólio melhor do que o antigo, e para consolidar o meu aprendizado em ReactJS.",
-  acessar: "https://github.com/SandroFernandesRosal/Portf-lio-ReactJS",
+  acessar: "https://sandrofernandes.000webhostapp.com/",
   repositorio: "https://github.com/SandroFernandesRosal/Portf-lio-ReactJS"
   
  } ,

@@ -5,8 +5,7 @@
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  margin-top: 100px ;
-  margin-bottom: 20px;
+  margin: 100px 0px 20px 0px;
   animation-name: sobre;
   animation-duration: 2s;
 

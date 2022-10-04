@@ -1,4 +1,4 @@
-import { Route, HashRouter, Routes } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Home } from "./Pages/index/Home";
 import { Sobre } from "./Pages/sobre/Sobre";
 import { Header } from "./header/Header";
@@ -10,7 +10,7 @@ export const Rotas = () => {
 
   return(
 <>
-    <HashRouter basename="/">
+    <BrowserRouter >
     <Header />
     <Routes>
     <Route element = {<Home />}  path="/" exact />
@@ -22,7 +22,7 @@ export const Rotas = () => {
     </Routes>
     
     
-   </HashRouter>
+   </BrowserRouter>
    
    </>
   )
