@@ -16,7 +16,7 @@ export const Home = () => {
                <span>Sandro Fernandes</span>
                <h2>Desenvolvedor Front-End JR</h2>
                
-               <a download href="src\Pages\index\Sandro Fernandes - Dev Front-End  (1).pdf" target="blank"> 
+               <a download href="src\Pages\index\SandroFernandes-DevFront-End.pdf" target="blank"> 
                    <button> Download CV </button> 
                </a>   
                
