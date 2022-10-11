@@ -4,14 +4,26 @@ import { Sobre } from "./Pages/sobre/Sobre";
 import { Header } from "./header/Header";
 import { Contato } from "./Pages/contato/Contato";
 import { Projetos } from "./Pages/projetos/Projetos";
-
+import { Light } from "./Light";
+import { useState } from "react";
 
 export const Rotas = () => {
+
+  const [theme , setTheme] = useState(false)
+  
+  const mudarTema = () => {
+    
+    theme === false ? setTheme(true) : setTheme(false)
+
+   
+  }
 
   return(
 <>
     <BrowserRouter >
-    <Header />
+    {theme && <Light />  }
+    
+    <Header mudar={mudarTema} />
     <Routes>
     <Route element = {<Home />}  path="/" exact />
     <Route element = {<Sobre />}  path="/sobre" />
