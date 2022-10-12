@@ -161,5 +161,6 @@ svg {
 }
 footer {
   background-color: #4F4F4F;
+  color: white;
 }
 `,Am=(e,t)=>{const[n,r]=I.exports.useState(()=>{const o=localStorage.getItem(e);return o?JSON.parse(o):t});return I.exports.useEffect(()=>{localStorage.setItem(e,JSON.stringify(n))},[e,n]),[n,r]},jm=()=>{const[e,t]=Am(!1);return v(Qr,{children:K(s0,{children:[e&&v(Dm,{}),v(L0,{mudar:()=>{t(e===!1)},tema:e}),K(r0,{children:[v(cr,{element:v(y0,{}),path:"/",exact:!0}),v(cr,{element:v(k0,{}),path:"/sobre"}),v(cr,{element:v(A0,{}),path:"/contato"}),v(cr,{element:v(B0,{}),path:"/projetos"})]})]})})};const Um=()=>K("footer",{children:[v("div",{children:" Sandro Fernandes "}),v("div",{children:"Desenvolvedor Front-End"})]});function Bm(){return K(Qr,{children:[v("div",{className:"App",children:v(jm,{})}),v(Um,{})]})}di.createRoot(document.getElementById("root")).render(v(wt.StrictMode,{children:v(Bm,{})}));
