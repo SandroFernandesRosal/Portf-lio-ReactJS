@@ -42,7 +42,7 @@
   background-color:  black;
   color: white;
   height: 80px;
-  width: 50vw;
+  width: 100vw;
   border-bottom: 1px solid green;
   border-right: 1px solid green;
   position: fixed;
@@ -57,17 +57,12 @@
     
   }
   to {
-     width: 45vw;
+     width: 100vw;
      
     }
 }
 
-.switch svg{
-  
-  
-  font-size: 18px;
-  
-}
+
 .menu-mobile  {
     list-style: none;
     display: flex;

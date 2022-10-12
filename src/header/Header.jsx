@@ -8,9 +8,7 @@ import { useState} from "react"
 import {AiOutlineClose} from "react-icons/ai"
 import {GiHamburgerMenu} from "react-icons/gi"
 import { Link } from "react-router-dom"
-import Switch from "react-switch";
-import {BsDisplay, BsMoonStarsFill, BsSunFill} from "react-icons/bs"
-
+import { BotaoTema } from "./BotaoTema"
 
 
 
@@ -33,22 +31,8 @@ export const Header = (props) => {
             <img src={Logo} />
             </Link></div>
 
+           <BotaoTema mudar={props.mudar} />
            
-            <Switch 
-           
-            onChange={props.mudar}
-            checked={true}
-            
-            uncheckedIcon={false}
-            onColor={"#7c7c7c"}
-            offColor={'#555'}
-            checkedIcon={<BsSunFill/> }
-            onHandleColor={'#00ff15'}
-            offHandleColor={'#00ff15'}
-            boxShadow={false}
-            activeBoxShadow={false}
-            
-            />
 
              <button className="botao-menu">
               <GiHamburgerMenu onClick={() => {setShowMenu(true); setHideNav(false)} }  />
