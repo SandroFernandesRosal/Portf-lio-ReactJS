@@ -86,9 +86,22 @@ svg {
   
 }
 
+.perfil-home {
+  background-image: url(./img/img-perfil-light.jpg); }
+
 .home h1, .home h2 {
   color: white
 }
+
+.home span {
+  color: black;
+}
+
+.saiba-mais spam {
+  color: black;
+}
+
+
 
 .header nav {
   background-color:#4F4F4F;
@@ -120,6 +133,7 @@ svg {
 
 .contato form {
   background-color:  #4F4F4F;
+  
 }
 
 .contato form input, textarea {
@@ -127,9 +141,11 @@ svg {
   
 }
 
+
+
 .contato form button {
   background-color: darkgray;
-  color: black;
+  color:black
 }
 footer {
   background-color: #4F4F4F;
