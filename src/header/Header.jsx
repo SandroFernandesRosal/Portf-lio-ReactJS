@@ -8,7 +8,8 @@ import { useState} from "react"
 import {AiOutlineClose} from "react-icons/ai"
 import {GiHamburgerMenu} from "react-icons/gi"
 import { Link } from "react-router-dom"
-import { BotaoTema } from "./BotaoTema"
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
+import Switch from "react-switch"
 
 
 
@@ -17,7 +18,7 @@ export const Header = (props) => {
   const [showMenu, setShowMenu] = useState(false)
   const [hidenav , setHideNav] = useState(true)
 
-
+ 
 
   
   return(
@@ -30,8 +31,21 @@ export const Header = (props) => {
           <div className="logo"><Link to="/">
             <img src={Logo} />
             </Link></div>
-
-           <BotaoTema mudar={props.mudar} />
+           <Switch 
+           onChange={props.mudar}
+           checked={props.tema}
+           checkedIcon={<BsFillMoonFill color="#c96dfd"  fontSize="26" />}
+           uncheckedIcon={<BsFillSunFill color="yellow" fontSize="26" />}
+           className="switch"
+           onColor={'#0e0e0e'}
+           offColor={'#4F4F4F'}
+           onHandleColor={'#fff'}
+           offHandleColor={'#fff'}
+           activeBoxShadow={'0 0 1px 2px #008000'}
+          
+           
+           />
+           
            
 
              <button className="botao-menu">

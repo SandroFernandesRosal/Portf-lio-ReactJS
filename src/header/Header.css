@@ -48,7 +48,12 @@
   position: fixed;
   z-index: 55;
   animation-name: nav;
-    animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+.switch svg  {
+  
+  padding: 3px;
 }
 
 @keyframes nav {
@@ -203,6 +208,7 @@ a {
   .menu-mobile {
     width: 30vw;
     border-right: 1px solid green;
+    border-bottom: 1px solid green;
     
     animation-name: menu;
     animation-duration: 2s;
