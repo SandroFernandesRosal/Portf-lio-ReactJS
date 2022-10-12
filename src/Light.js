@@ -37,6 +37,20 @@ svg {
   background-color: #4F4F4F;
 }
 
+.formation li {
+  border-left: 1px groove white;
+}
+
+.formation li h4 {
+  color: white;
+  
+}
+
+.formation li::before {
+  color: white;
+ }
+
+
 .menu-mobile {
   background-color: gray;
 }
@@ -67,13 +81,12 @@ svg {
   
 }
 
-
-
 .contato form button {
   background-color: darkgray;
   color:black
 }
 footer {
   background-color: #4F4F4F;
+  color: white;
 }
 `
