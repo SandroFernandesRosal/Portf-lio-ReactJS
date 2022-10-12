@@ -6,13 +6,32 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+ 
 }
 
+@keyframes float {
+ 0% {
+  transform: translatey(0px);
+ }
 
+ 50% {
+  transform: translatey(-30px);
+ }
+
+ 100% {
+  transform: translatey(0px);
+ }
+}
+
+.home {
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
 
 .home h1, .home h2 {
   font-size: 19px;
+  
 }
 
 
@@ -27,7 +46,7 @@
   animation: typewriter 5s steps(20) infinite alternate
   , blink 800ms steps(20) infinite normal;
   border-right: 3px solid black;
-  
+ 
 }
 
 @keyframes typewriter {
@@ -54,9 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0px 20px 0px;
   
-
 }
 
 .home a {
@@ -97,7 +114,7 @@
 }
 
 .saiba-mais spam {
-  font-size: 25px;
+  font-size: 30px;
   color: green;
   margin: 5px 0;
 }
@@ -121,6 +138,12 @@
 }
 
 @media (min-width: 700px) {
+  .perfil-home {
+    align-items: flex-start;
+  }
+  .home {
+    margin: 100px 0px 20px 0px;
+  }
 
 .home span {
   font-size: 65px;

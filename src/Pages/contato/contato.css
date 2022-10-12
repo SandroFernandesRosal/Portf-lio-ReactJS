@@ -42,7 +42,7 @@
 .contato form {
   display: flex;
   flex-direction: column;
-  
+ 
   background-color: black;
   width: 75%;
   max-width: 500px;
@@ -62,19 +62,24 @@
  border: 2px solid green;
  border-radius: 15px 0px 15px 0px;
  cursor: pointer;
+ font-weight: 900;
+ 
+}
+
+.contato textarea {
+  font-size: 16px;
 }
 
 .contato form button {
   width: 40%;
   height: 10%;
   margin:10px auto;
-  font-size: 17px;
   color: white;
   background-color: black;
   border-radius: 15px;
   border: 2px solid green;
   cursor: pointer;
- 
+  font-weight: 900;
 }
 
 .contato form button:hover {
