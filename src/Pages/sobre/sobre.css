@@ -115,6 +115,12 @@
   
 }
 
+.saibamais-habilidades {
+  font-size: 18px;
+  margin-bottom: 100px;
+  
+}
+
 @media (min-width: 800px) {
   .sobre {
     margin: 0;
@@ -133,7 +139,7 @@
   .formation li {
   
    
-   height: 60px;
+   height: 55px;
   }
 
 

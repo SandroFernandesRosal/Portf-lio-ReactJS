@@ -63,8 +63,8 @@ export const Sobre = () => {
         <h2>Formação</h2>
      
         <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 2° Período" />
-        
-      {saibaMais && <div>Clique em uma habilidade e saiba mais</div> }
+
+      {saibaMais && <div className="saibamais-habilidades">Clique em uma habilidade e saiba mais</div> }
        
 
        {react && <ItemEstudo title="React JS e React Native" sub="Estácio, Rocketseat, Origamid e Onebitcode" />}
