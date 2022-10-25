@@ -2,7 +2,7 @@ import "./home.css"
 import { Sociais } from "../../header/Sociais"
 import {FaAngleDoubleDown} from "react-icons/fa"
 import { Link } from "react-router-dom"
-
+import Download from "./SandroFernandes.pdf"
 
 export const Home = () => {
 
@@ -15,18 +15,21 @@ export const Home = () => {
                <h1>Olá, eu sou o </h1>
                <span>Sandro Fernandes</span>
                <h2>Desenvolvedor Front-End JR</h2>
+
+               <Sociais />
                
-               <a download href="src\Pages\index\Sandro Fernandes - Dev Front-End.pdf" target="blank"> 
-                   <button> Download CV </button> 
+               <a  href={Download}download> 
+                   <button type="button">
+                   Download CV
+                   </button>
                </a>   
                
-               <Sociais />
 
                <Link to="/sobre">
-               <div className="saiba-mais">
-                  <spam>Saiba mais</spam>
-                  <FaAngleDoubleDown />
-               </div>
+               <button className="saiba-mais">
+                  Saiba mais
+                  
+               </button>
                </Link>
            </div>
 

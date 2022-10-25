@@ -24,7 +24,7 @@ export const Sociais = () => {
     
     
     
-    <a href="http://www.facebook.com/rpzfc" target="blank">
+    <a href="http://www.facebook.com/guilffc" target="blank">
       <FaFacebook />
     </a>
     

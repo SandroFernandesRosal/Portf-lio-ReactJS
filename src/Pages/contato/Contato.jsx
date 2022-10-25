@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contato.css"
 import { Sociais } from "../../header/Sociais";
+import {BiHappyAlt} from "react-icons/bi"
 
 
 
@@ -15,15 +16,23 @@ export const Contato = () => {
  const [emailInput, setEmailInput] = useState('')
  const [assuntoInput, setAssuntoInput] = useState('')
  const [textInput, setTextInput] = useState('')
+ const [alert , setAlert ] = useState(false)
+
+ const timeoutRef = useRef()
 
  const onSubmit = (e) => {
   e.preventDefault();
   
-
     emailjs.sendForm('gmailsfr', 'template_mumsd62', form.current, 'n_VePloj0wX6t-MH9')
       .then(() => {
-          alert('Mensagem enviada com sucesso! :)');
+        
+        alert === false ? setAlert(true) : setAlert(false)
           
+        clearTimeout(timeoutRef.current)
+        timeoutRef.current = setTimeout(() => {
+          setAlert(false)
+        }, 2000);
+
       }, (error) => {
           alert(error.mensagem);
       });
@@ -42,7 +51,9 @@ export const Contato = () => {
     <>
     
     <section className="contato">
-        
+      
+    {alert && <div className="alert-email">Mensagem enviada com sucesso! <BiHappyAlt /></div>}   
+
     <h1 className="h2-contato">Entre em contato</h1>
 
       <Sociais />
@@ -58,6 +69,8 @@ export const Contato = () => {
 
         <button type="submit" name="submit">Enviar</button>
       </form>
+
+      
     </section>
 
     </>

@@ -8,7 +8,7 @@
   margin: 100px 0px 20px 0px;
   animation-name: sobre;
   animation-duration: 2s;
-
+ 
 }
 
 @keyframes sobre {
@@ -66,15 +66,16 @@
 
 .formation {
   list-style: none;
-  width: 300px;
+  width:90%;
   display: flex;
+  align-content: center;
   flex-direction: column;
   
 }
 
 .formation h2 {
   font-size: 40px;
-  margin: 10px 00px 20px 0px;
+  margin: 10px 0px 20px 0px;
   border-bottom: 2px solid green;
   align-self: center;
   
@@ -87,6 +88,7 @@
  border-left: 1px groove gray;
  padding-left: 12px;
  
+ height: 90px;
 }
 
 
@@ -94,6 +96,7 @@
 .formation li h3, .formation li h4 {
   position: relative;
   top: -75px;
+ 
   
 }
 
@@ -125,6 +128,12 @@
   .formation {
     flex:1;
     height: 300px;
+  }
+
+  .formation li {
+  
+   
+   height: 60px;
   }
 
 

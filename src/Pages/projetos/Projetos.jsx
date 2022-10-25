@@ -18,6 +18,7 @@ export const Projetos = () => {
     <ul className="projetos-container">
 
     {DataProjetos.map((projeto, index) => <ProjetosItem key={index} projeto={projeto} />)}
+    
     </ul>
 
     </section>

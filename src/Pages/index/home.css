@@ -73,6 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:10px;
   
 }
 
@@ -88,10 +89,10 @@
   font-size: 17px;
   background-color: black;
   color: white;
-  
+  width: 60%;
   outline: none;
   cursor: pointer;
-  margin: 15px;
+  
 }
 
 .home button:hover {
@@ -109,30 +110,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
   
+  animation: saibaMais 1s infinite;
 }
 
-.saiba-mais spam {
-  font-size: 30px;
-  color: green;
-  margin: 5px 0;
+.home a {
+  display: flex;
+  justify-content: center;
 }
 
-.saiba-mais svg {
-  font-size: 60px;
-  animation: saibaMais .5s infinite;
-  
-}
 
 
 @keyframes saibaMais {
   from {
-    color: white;
+    background-color: black;
     
   }
   to {
-     color: green;
+     background-color: green;
      
     }
 }

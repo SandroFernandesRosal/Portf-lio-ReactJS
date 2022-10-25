@@ -25,7 +25,7 @@ export const ProjetosItem = ({ projeto }) => {
 
       <div className="buttons">
 
-        <button onClick={() => setDisplay(true)} ><BsInfoSquare/></button>
+        <button onClick={() => display === false ? setDisplay(true): setDisplay(false) } ><BsInfoSquare/></button>
 
         <div>
           <a href={projeto.acessar} target="_blank">
