@@ -3,6 +3,7 @@ base = "."
 command = "npm run build"
 publish = "./dist/"
 
-[[redirect]]
+[[redirects]]
 from = "/*"
+to = "/index.html"
 status = 200
