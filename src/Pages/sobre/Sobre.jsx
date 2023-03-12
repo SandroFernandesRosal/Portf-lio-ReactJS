@@ -67,26 +67,24 @@ export const Sobre = () => {
       <ul className="formation">
         <h2>Formação</h2>
      
-        <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 3° Período" />
+          <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 3° Período" />
 
-      {saibaMais && <div className="saibamais-habilidades">Clique em uma habilidade e saiba mais</div> }
-       
-
-       {react && <ItemEstudo title="React JS e React Native" sub="Estácio, Rocketseat, Origamid e Onebitcode" />}
-
-       {javascript &&  <ItemEstudo title="Javascript" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
-
-       {github &&  <ItemEstudo title="Github" sub="Rocketseat" /> }
-
-       {git &&  <ItemEstudo title="Git" sub="Rocketseat" /> }
-
-       {css &&  <ItemEstudo title="CSS3" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
+        {saibaMais && <div className="saibamais-habilidades">Clique em uma habilidade e saiba mais</div> }
         
-       {html &&  <ItemEstudo title="HTML" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
-
-       {node &&  <ItemEstudo title="NodeJS" sub="Rocketseat" /> }
-       
+        {node &&  <ItemEstudo title="NodeJS" sub="Rocketseat" /> }
         
+        {react && <ItemEstudo title="React JS e React Native" sub="Estácio, Rocketseat, Origamid e Onebitcode" />}
+
+        {javascript &&  <ItemEstudo title="Javascript" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
+
+        {github &&  <ItemEstudo title="Github" sub="Rocketseat" /> }
+
+        {git &&  <ItemEstudo title="Git" sub="Rocketseat" /> }
+
+        {css &&  <ItemEstudo title="CSS3" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
+          
+        {html &&  <ItemEstudo title="HTML" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
+
       </ul>
     </section>
     
