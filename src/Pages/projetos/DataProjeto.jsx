@@ -13,7 +13,7 @@ export const DataProjetos = [
 
   {img: "../img/rpz-novo.png",
    saiba: "RPZ FC - Time de futebol amador ",
-   tecnologia: "Projeto feito em ReactJS. Refiz do zero um projeto antigo. ",
+   tecnologia: "Projeto feito em ReactJS. Site para um time de futebol amador. ",
    acessar: "https://rpzfc.netlify.app/",
    repositorio: "https://github.com/SandroFernandesRosal/RPZFC-ReactJS"
    
