@@ -25,7 +25,7 @@
 .container-skills {
   display: flex;
   flex-direction: column;
-   align-items: center;
+  align-items: center;
   
 }
 
@@ -88,7 +88,7 @@
  border-left: 1px groove gray;
  padding-left: 12px;
  
- height: 90px;
+ height: 75px;
 }
 
 
@@ -128,12 +128,12 @@
     align-items: center;
     height: 100vh;
     
-    
   }
 
   .formation {
     flex:1;
-    height: 300px;
+    height: 400px;
+    
   }
 
   .formation li {
@@ -146,6 +146,8 @@
 
   .container-skills {
     flex:1;
-  
+    height: 400px;
   }
+
+ 
 }

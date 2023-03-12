@@ -1,7 +1,7 @@
 import { Skills } from "./Skills"
 import "./sobre.css"
 import { useState } from "react"
-import { FaLastfmSquare } from "react-icons/fa"
+
 
 export const Sobre = () => {
 
@@ -12,9 +12,14 @@ export const Sobre = () => {
   const [ css, setCss] = useState(false)
   const [ html , setHtml] = useState(false)
   const [saibaMais , setSaibaMais] = useState(true)
+  const [node, setNode] = useState(false)
 
   const showSaibaMais = () => {
     setSaibaMais(false)
+  }
+
+  const showNode = () => {
+    node === false ? setNode(true) : setNode(false)
   }
 
   const showReact = () => {
@@ -42,12 +47,12 @@ export const Sobre = () => {
     html === false ? setHtml(true) : setHtml(false)
   }
 
-  const ItemEstudo = (props) => {
+  const ItemEstudo = ({title, sub}) => {
 
     return(
       <li >
-      <h3>{props.title}</h3>
-      <h4>{props.sub}</h4>
+      <h3>{title}</h3>
+      <h4>{sub}</h4>
       
       </li>
     )
@@ -57,12 +62,12 @@ export const Sobre = () => {
     
     <section className="sobre">
       
-      <Skills react={showReact}  html={showHtml}  css={showCss} git={showGit} github={showGithub} javascript={showJavascript} saibaMais={showSaibaMais}/>
+      <Skills react={showReact}  html={showHtml}  css={showCss} git={showGit} github={showGithub} javascript={showJavascript} saibaMais={showSaibaMais} node={showNode}/>
 
       <ul className="formation">
         <h2>Formação</h2>
      
-        <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 2° Período" />
+        <ItemEstudo title="Analise e Desenvolvimento de Sistemas" sub="Universidade Estácio de Sá - 3° Período" />
 
       {saibaMais && <div className="saibamais-habilidades">Clique em uma habilidade e saiba mais</div> }
        
@@ -78,6 +83,8 @@ export const Sobre = () => {
        {css &&  <ItemEstudo title="CSS3" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
         
        {html &&  <ItemEstudo title="HTML" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
+
+       {node &&  <ItemEstudo title="NodeJS" sub="Rocketseat" /> }
        
         
       </ul>

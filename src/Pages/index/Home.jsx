@@ -1,6 +1,5 @@
 import "./home.css"
 import { Sociais } from "../../header/Sociais"
-import {FaAngleDoubleDown} from "react-icons/fa"
 import { Link } from "react-router-dom"
 import Download from "./SandroFernandes.pdf"
 
