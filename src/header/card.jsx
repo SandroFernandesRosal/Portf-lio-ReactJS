@@ -1,18 +1,17 @@
+import { Sociais } from "./Sociais";
 
-import { Sociais } from "./sociais"
-
-export const Card = (props) => {
+export const Card = ({img, nome, title, cidade}) => {
 
   return(
     <div className="card-container">
     
-    <div className="card-perfil">
-    <img src={props.img}/> 
-    <p>{props.nome}</p>
-    <p>{props.title}</p>
-    <p>{props.cidade}</p>
-    <Sociais />
-    </div>
+        <div className="card-perfil">
+            <img src={img}/> 
+            <p>{nome}</p>
+            <p>{title}</p>
+            <p>{cidade}</p>
+            <Sociais />
+        </div>
     
    </div>
   )

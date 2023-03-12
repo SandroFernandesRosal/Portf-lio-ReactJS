@@ -1,19 +1,19 @@
-import React from "react"
-import "./Header.css"
-import { Card } from "./card"
-import FotoPerfil from "./img/foto-perfil.jpg"
-import Logo from "./img/logo-11.png"
-import { MenuMobile } from "./MenuMobile"
-import { useState} from "react"
-import {AiOutlineClose} from "react-icons/ai"
-import {GiHamburgerMenu} from "react-icons/gi"
-import { Link } from "react-router-dom"
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
-import Switch from "react-switch"
+import React from "react";
+import "./Header.css";
+import { Card } from "./card";
+import FotoPerfil from "./img/foto-perfil.jpg";
+import Logo from "./img/logo-11.png";
+import { MenuMobile } from "./MenuMobile";
+import { useState} from "react";
+import {AiOutlineClose} from "react-icons/ai";
+import {GiHamburgerMenu} from "react-icons/gi";
+import { Link } from "react-router-dom";
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import Switch from "react-switch";
 
 
 
-export const Header = (props) => {
+export const Header = ({mudar, tema}) => {
 
   const [showMenu, setShowMenu] = useState(false)
   const [hidenav , setHideNav] = useState(true)
@@ -32,8 +32,8 @@ export const Header = (props) => {
             <img src={Logo} />
             </Link></div>
            <Switch 
-           onChange={props.mudar}
-           checked={props.tema}
+           onChange={mudar}
+           checked={tema}
            checkedIcon={<BsFillMoonFill color="#c96dfd"  fontSize="26" />}
            uncheckedIcon={<BsFillSunFill color="yellow" fontSize="26" />}
            className="switch"
