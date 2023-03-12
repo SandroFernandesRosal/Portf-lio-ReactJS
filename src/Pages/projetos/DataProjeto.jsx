@@ -6,7 +6,7 @@ export const DataProjetos = [
   {img: "../img/portfolio-novo.png",
   saiba: "Meu Portfólio atual",
   tecnologia: "Projeto feito em ReactJS. Fiz esse projeto com a intenção de fazer um portfólio melhor do que o antigo, e para consolidar o meu aprendizado em ReactJS.",
-  acessar: "https://sandrofernandes.000webhostapp.com/",
+  acessar: "https://sandrofernandesdev.netlify.app/",
   repositorio: "https://github.com/SandroFernandesRosal/Portf-lio-ReactJS"
   
  } ,
@@ -14,7 +14,7 @@ export const DataProjetos = [
   {img: "../img/rpz-novo.png",
    saiba: "RPZ FC - Time de futebol amador ",
    tecnologia: "Projeto feito em ReactJS. Refiz do zero um projeto antigo, onde pude por em prática o aprendizado em ReactJS. ",
-   acessar: "https://rpz-fc.000webhostapp.com/",
+   acessar: "https://rpzfc.netlify.app/",
    repositorio: "https://github.com/SandroFernandesRosal/RPZFC-ReactJS"
    
   } ,
