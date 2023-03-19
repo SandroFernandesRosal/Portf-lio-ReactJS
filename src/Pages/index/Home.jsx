@@ -16,7 +16,7 @@ export const Home = () => {
                <h2>Desenvolvedor Front-End JR</h2>
 
                <Sociais />
-               
+               <div className="buttons"> 
                <a  href={Download}download> 
                    <button type="button">
                    Download CV
@@ -30,6 +30,7 @@ export const Home = () => {
                   
                </button>
                </Link>
+               </div>
            </div>
 
            <div className="foto-do-perfil">
