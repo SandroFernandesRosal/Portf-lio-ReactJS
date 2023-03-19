@@ -5,7 +5,6 @@
 }
 
 
-
 .logo {
   width: 60px;
   height: 60px;
@@ -218,7 +217,7 @@ a {
     animation-name: menu;
     animation-duration: 2s;
     background-color: black;
-    
+    flex: 1;
     
   }
 
@@ -247,6 +246,7 @@ a {
  
   .header nav {
     width: 50vw;
+    flex: 1;
     
   }
 

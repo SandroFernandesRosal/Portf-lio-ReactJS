@@ -46,14 +46,14 @@ export const Header = ({mudar, tema}) => {
            
            />
            
-           
-
              <button className="botao-menu">
               <GiHamburgerMenu onClick={() => {setShowMenu(true); setHideNav(false)} }  />
              </button> 
      
        </nav>
+       
        }
+
        { showMenu &&
                 <ul className="menu-mobile" onClick={() => { setShowMenu(false); setHideNav(true) }}>
             

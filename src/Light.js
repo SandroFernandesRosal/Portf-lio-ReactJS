@@ -89,4 +89,11 @@ footer {
   background-color: #4F4F4F;
   color: white;
 }
+
+@media (min-width: 700px) { 
+  .menu-mobile  { 
+    background-color: #4F4F4F;
+  }
+
+}
 `
