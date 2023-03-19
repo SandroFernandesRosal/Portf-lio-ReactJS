@@ -17,7 +17,7 @@
 
 
 .home h1, .home h2 {
-  font-size: 18px;
+  font-size: 22px;
   
 }
 
@@ -25,7 +25,7 @@
 
 .home span {
   color: green;
-  font-size: 35px;
+  font-size: 45px;
   font-family: 'Ms Madi', cursive;
   font-weight: 900;
   white-space: nowrap;
@@ -88,13 +88,14 @@
 .home .sociais  svg{
   width: 100%;
   display: flex;
-  
- 
+
  }
 
 .buttons {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  width: 100%;
+  
 }
 
 
@@ -133,8 +134,8 @@
   
   display: flex;
   align-items: center;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   justify-content: center;
   align-items: center;
   border-radius: 100% 40% 55% 35%;
@@ -152,8 +153,8 @@
 }
 
 .foto-do-perfil img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   
 }
 
