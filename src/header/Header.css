@@ -206,6 +206,7 @@ a {
 
 @media (min-width: 700px) {
 
+  
 
   .menu-mobile {
     width: 50vw;
@@ -216,6 +217,7 @@ a {
     justify-content: space-around;
     animation-name: menu;
     animation-duration: 2s;
+    background-color: black;
     
     
   }
@@ -223,7 +225,7 @@ a {
   .buttons-menu-mobile {
     display: flex;
     justify-content: center;
-    margin: 0px 10px;
+    margin: 0px 15px;
     
     
   }
@@ -235,7 +237,6 @@ a {
   .menu-mobile li {
     border: none;
     
-    height: 100%;
     
   }
 
@@ -244,15 +245,8 @@ a {
     
   }
  
-
-  .card-perfil {
-    width: 65%;
-    
-  }
-
   .header nav {
     width: 50vw;
-    align-content: space-around;
     
   }
 
@@ -291,13 +285,13 @@ a {
 
   .menu-mobile {
     width: 40vw;
+    
      
   }
 
   .header nav {
     width: 40vw;
-    align-content: space-around;
-    
+        
   }
 
   @keyframes nav {

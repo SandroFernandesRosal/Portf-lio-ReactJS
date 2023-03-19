@@ -4,6 +4,7 @@
   align-items: center;
   margin: 100px 0px 20px 0px;
   width: 100vw;
+  height: 100%;
   animation-name: projetos;
   animation-duration: 2s;
 }
@@ -154,7 +155,11 @@
   
 }
 
-
+@media (min-width: 700px) {
+  .projetos {
+    height: 100vh;
+  }
+}
 
 
 
