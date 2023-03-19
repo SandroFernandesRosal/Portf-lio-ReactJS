@@ -6,6 +6,7 @@ import { Contato } from "./Pages/contato/Contato";
 import { Projetos } from "./Pages/projetos/Projetos";
 import { Light } from "./Light";
 import { usePersistedState } from "./usePersistedState";
+import { Footer } from "./footer/Footer";
 
 export const Rotas = () => {
  
@@ -32,7 +33,7 @@ export const Rotas = () => {
           <Route element = {<Contato />}  path="/contato" />
           <Route element = {<Projetos />}  path="/projetos" />
         </Routes>
-    
+        <Footer />
     </BrowserRouter>
    
    </>

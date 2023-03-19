@@ -38,6 +38,8 @@ body::-webkit-scrollbar-thumb {
 
 .App {
   display: flex;
+  flex-direction: column;
+  
 }
 
 

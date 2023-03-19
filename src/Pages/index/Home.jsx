@@ -1,7 +1,8 @@
-import "./home.css"
-import { Sociais } from "../../header/Sociais"
-import { Link } from "react-router-dom"
-import Download from "./SandroFernandes.pdf"
+import "./home.css";
+import { Sociais } from "../../header/Sociais";
+import { Link } from "react-router-dom";
+import Download from "./SandroFernandes.pdf";
+import FotoPerfil from "../../header/img/foto-perfil.png";
 
 export const Home = () => {
 
@@ -9,7 +10,6 @@ export const Home = () => {
     
     <section className="perfil-home">
       
-
            <div className="home"> 
                <h1>Olá, eu sou o </h1>
                <span>Sandro Fernandes</span>
@@ -30,6 +30,10 @@ export const Home = () => {
                   
                </button>
                </Link>
+           </div>
+
+           <div className="foto-do-perfil">
+            <img src={FotoPerfil}/>
            </div>
 
            

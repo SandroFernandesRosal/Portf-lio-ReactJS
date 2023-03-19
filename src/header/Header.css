@@ -110,7 +110,7 @@ a {
 
 .menu-mobile li {
   cursor: pointer;
-  background-color: black;
+  
   font-size: 22px;
   padding: 15px 0px;
   text-align: center;
@@ -204,24 +204,56 @@ a {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
+
+
   .menu-mobile {
-    width: 30vw;
+    width: 50vw;
+    height: 80px;
     border-right: 1px solid green;
     border-bottom: 1px solid green;
-    
+    flex-direction: row;
+    justify-content: space-around;
     animation-name: menu;
     animation-duration: 2s;
-    position: inherit;
-
+    
+    
   }
+
+  .buttons-menu-mobile {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+    
+    
+  }
+
+  .menu-mobile .logo {
+    display: none;
+  }
+
+  .menu-mobile li {
+    border: none;
+    
+    height: 100%;
+    
+  }
+
+  .menu-mobile li:hover { 
+    background-color: transparent;
+    
+  }
+ 
 
   .card-perfil {
     width: 65%;
+    
   }
 
   .header nav {
-    width: 30vw;
+    width: 50vw;
+    align-content: space-around;
+    
   }
 
   @keyframes nav {
@@ -230,23 +262,53 @@ a {
      
     }
     to {
-       width: 30vw;
+       width: 50vw;
       
       }
     }
 
   @keyframes menu {
     from {
-      width: 15vw;
+      width: none;
      
     }
     to {
-       width: 30vw;
+       width: none;
       
       }
+  }
+
+  .card-container {
+    display: none;
   }
 
   
 
  
+}
+
+@media (min-width: 900px) {
+
+  .menu-mobile {
+    width: 40vw;
+     
+  }
+
+  .header nav {
+    width: 40vw;
+    align-content: space-around;
+    
+  }
+
+  @keyframes nav {
+    from {
+      width: 0vw;
+     
+    }
+    to {
+       width: 40vw;
+      
+      }
+    }
+
 }
