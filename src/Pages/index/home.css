@@ -122,18 +122,11 @@
 }
 
 @media (min-width: 700px) {
-  .perfil-home {
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .home {
-    margin: 100px 0px 20px 0px;
-    
-  }
+ 
+  
 
 .foto-do-perfil {
-  margin: 100px 0px 20px 0px;
+  
   display: flex;
   align-items: center;
   height: 300px;
@@ -175,18 +168,11 @@
 @media (min-width: 800px) {
 
   .perfil-home {
-    align-items: flex-start;
+    align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
   }
-  .home {
-    margin: 100px 0px 20px 0px;
-    
-  }
-
-.foto-do-perfil {
-  margin: 100px 0px 20px 0px;
  
-}
+
  }
 
