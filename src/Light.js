@@ -52,23 +52,25 @@ svg {
 
 
 .menu-mobile {
-  background-color: gray;
+  backdrop-filter: blur(8px);
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
-.menu-mobile li {
-  background-color: #4F4F4F;
-}
+
 
 .botao-menu  {
-  background-color: #4F4F4F;
+  backdrop-filter: blur(8px);
+  background-color: rgba(100, 100, 100, 0.1);
 }
 
 .logo {
-  background-color: #4F4F4F;
+  backdrop-filter: blur(8px);
+  background-color: rgba(100, 100, 100, 0.1);
 }
 
 .card-perfil {
-  background-color: #4F4F4F;
+  backdrop-filter: blur(8px);
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
 .contato form {
@@ -90,10 +92,5 @@ footer {
   color: white;
 }
 
-@media (min-width: 700px) { 
-  .menu-mobile  { 
-    background-color: #4F4F4F;
-  }
 
-}
 `

@@ -75,7 +75,6 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #0e0e0e;
     z-index: 99;
     position: fixed;
     backdrop-filter: blur(8px);
