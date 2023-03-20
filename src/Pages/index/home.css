@@ -137,11 +137,13 @@
   height: 300px;
   width: 300px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   border-radius: 100% 40% 55% 35%;
   border: 1px double green;
   background-color: #0e0e0e;
   cursor: pointer;
+  
+  overflow: hidden;
   
   
 }
