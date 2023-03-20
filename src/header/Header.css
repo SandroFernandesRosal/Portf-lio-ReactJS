@@ -265,11 +265,11 @@ a {
 
   @keyframes menu {
     from {
-      height: 0%;
+      height: none;
      
     }
     to {
-       height: 100%;
+       height: none;
       
       }
   }
