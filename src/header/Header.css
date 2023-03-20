@@ -208,16 +208,16 @@ a {
   
 
   .menu-mobile {
-    width: 50vw;
-    height: 80px;
+    
     border-right: 1px solid green;
     border-bottom: 1px solid green;
-    flex-direction: row;
-    justify-content: space-around;
+    
+    justify-content: space-evenly;
     animation-name: menu;
     animation-duration: 2s;
-    background-color: black;
     flex: 1;
+    backdrop-filter: blur(8px);
+    background-color: rgba(100, 100, 100, 0.1)
     
   }
 
@@ -235,17 +235,19 @@ a {
 
   .menu-mobile li {
     border: none;
+    font-size: 35px;
     
     
   }
 
   .menu-mobile li:hover { 
+    color: green;
     background-color: transparent;
     
   }
  
   .header nav {
-    width: 50vw;
+    width: 100vw;
     flex: 1;
     
   }
@@ -256,18 +258,18 @@ a {
      
     }
     to {
-       width: 50vw;
+       width: 100vw;
       
       }
     }
 
   @keyframes menu {
     from {
-      width: none;
+      height: 0%;
      
     }
     to {
-       width: none;
+       height: 100%;
       
       }
   }
@@ -276,33 +278,5 @@ a {
     display: none;
   }
 
-  
-
- 
 }
 
-@media (min-width: 900px) {
-
-  .menu-mobile {
-    width: 40vw;
-    
-     
-  }
-
-  .header nav {
-    width: 40vw;
-        
-  }
-
-  @keyframes nav {
-    from {
-      width: 0vw;
-     
-    }
-    to {
-       width: 40vw;
-      
-      }
-    }
-
-}
