@@ -2,6 +2,14 @@
 
 
 export const DataProjetos = [
+  
+  {img: "../img/marvel-heroes.png",
+  saiba: "Loja de Quadrinho da Marvel",
+  tecnologia: "Projeto feito em ReactJS, styled components e consumo de api",
+  acessar: "https://marvel-heroes-app.netlify.app/",
+  repositorio: "https://github.com/SandroFernandesRosal/marvel-app"
+  
+ } ,
 
   {img: "../img/portfolio-novo.png",
   saiba: "Meu Portfólio atual",
