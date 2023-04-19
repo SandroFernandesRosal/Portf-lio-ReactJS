@@ -1,17 +1,17 @@
-.sobre {
-  
+import styled from "styled-components";
+
+export const Container = styled.section`
   width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items:center;
-  justify-content: center;
-  margin: 100px 0px 20px 0px;
+  padding-top: 100px;
   animation-name: sobre;
   animation-duration: 2s;
- 
-}
+  color: ${({ theme }) => theme.colors.primaryTextColor};
 
-@keyframes sobre {
+  @keyframes sobre {
   from {
     width: 0vw;
     
@@ -20,48 +20,6 @@
      width: 100vw;
      
     }
-}
-
-.container-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.container-skills h2 {
- font-size: 40px;
-  margin: 10px 0;
-  border-bottom: 2px solid green;
-  
-}
-
-.item-skills {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.7s;
-}
-
-.item-skills:hover {
-  background-color: green;
-}
-
-.skills svg {
- font-size: 60px;
 }
 
 .formation {
@@ -122,14 +80,11 @@
 }
 
 @media (min-width: 800px) {
-  .sobre {
-    margin: 0;
+ 
+  padding-top: 10;
     flex-direction: row;
     align-items: center;
-    height: 100vh;
     
-  }
-
   .formation {
     flex:1;
     height: 400px;
@@ -141,13 +96,65 @@
    
    height: 55px;
   }
+}
+`
+
+export const ContainerSkills = styled.div`
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
+ h2 {
+ font-size: 40px;
+  margin: 10px 0;
+  border-bottom: 2px solid green;
+  
+}
 
-  .container-skills {
+.item-skills {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: ${({ theme }) => theme.colors.bgSkills};
+  
+}
+
+.item-skills:hover {
+  background-color: green;
+}
+
+.skills svg {
+ font-size: 60px;
+ color: white;
+}
+
+@media (min-width: 800px) {
+   
     flex:1;
     height: 400px;
-  }
+  
 
- 
-}
+ }
+
+`
+
+
+
+
+
+
+

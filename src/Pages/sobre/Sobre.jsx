@@ -1,5 +1,5 @@
 import { Skills } from "./Skills"
-import "./sobre.css"
+import { Container } from "./styles"
 import { useState } from "react"
 
 
@@ -60,7 +60,7 @@ export const Sobre = () => {
 
   return(
     
-    <section className="sobre">
+    <Container >
       
       <Skills react={showReact}  html={showHtml}  css={showCss} git={showGit} github={showGithub} javascript={showJavascript} saibaMais={showSaibaMais} node={showNode}/>
 
@@ -86,7 +86,7 @@ export const Sobre = () => {
         {html &&  <ItemEstudo title="HTML" sub="Estácio, Rocketseat, Origamid e Curso em vídeo" /> }
 
       </ul>
-    </section>
+    </Container>
     
   )
 }

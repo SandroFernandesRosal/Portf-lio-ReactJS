@@ -3,12 +3,13 @@ import {FaExternalLinkAlt, FaRegClosedCaptioning} from "react-icons/fa"
 import {BsInfoSquare} from "react-icons/bs"
 import {FaGithub}  from "react-icons/fa"
 import {AiOutlineClose} from "react-icons/ai"
+import { Itens } from "./styles";
 
 export const ProjetosItem = ({ projeto }) => {
   const [display, setDisplay] = useState(false);
   
   return (
-    <li>
+    <Itens>
       <img src={projeto.img} onClick={() => setDisplay(true)} />
 
       { display && 
@@ -40,6 +41,6 @@ export const ProjetosItem = ({ projeto }) => {
         </div>
 
       </div>
-    </li>
+    </Itens>
   );
 }

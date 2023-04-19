@@ -1,5 +1,11 @@
-.perfil-home {
-  background-image: url(./img/img-bgperfil.jpg);
+import styled from "styled-components";
+import BgDark from "./img/img-bgperfil.jpg";
+import BgLight from "./img/img-perfil-light.jpg";
+
+
+export const Container = styled.section`
+
+background-image: url(${({ theme }) => theme.title === 'dark' ? BgDark : BgLight});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,10 +13,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
 
-.foto-do-perfil {
+
+  .foto-do-perfil {
   display: none;
   
 }
@@ -85,16 +90,17 @@
   
 }
 
-.home .sociais  svg{
-  width: 100%;
-  display: flex;
 
- }
+a {
+  text-decoration: none;
+}
 
 .buttons {
   display: flex;
+  justify-content: center;
   gap: 10px;
   width: 100%;
+  
   
 }
 
@@ -123,11 +129,11 @@
 
 @media (min-width: 700px) {
  
-  .perfil-home {
+  
     align-items: center;
     justify-content:space-around;
     
-  }
+  
   
 
 .foto-do-perfil {
@@ -142,7 +148,6 @@
   border: 1px double green;
   background-color: #0e0e0e;
   cursor: pointer;
-  
   overflow: hidden;
   
   
@@ -168,12 +173,35 @@
 
 @media (min-width: 800px) {
 
-  .perfil-home {
+  
     align-items: center;
     justify-content:space-around;
     
-  }
- 
-
+  
  }
+
+
+`
+
+export const SociaisContainer = styled.div`
+
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ text-align: center;
+
+ svg {
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
+ 
+}
+
+ svg:hover {
+  color: green;
+}
+
+`
+
+
 

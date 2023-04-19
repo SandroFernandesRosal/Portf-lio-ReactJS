@@ -3,7 +3,7 @@ import { useState } from "react"
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contato.css"
-import { Sociais } from "../../header/Sociais";
+import { Sociais } from "../../Components/header/Sociais";
 import {BiHappyAlt} from "react-icons/bi"
 
 

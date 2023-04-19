@@ -1,18 +1,19 @@
 import { Sociais } from "./Sociais";
+import { CardContainer } from "./styles";
 
-export const Card = ({img, nome, title, cidade}) => {
+export const Card = ({img, name, title, city}) => {
 
   return(
-    <div className="card-container">
+    <CardContainer>
     
         <div className="card-perfil">
             <img src={img}/> 
-            <p>{nome}</p>
+            <p>{name}</p>
             <p>{title}</p>
-            <p>{cidade}</p>
+            <p>{city}</p>
             <Sociais />
         </div>
     
-   </div>
+   </CardContainer>
   )
 }

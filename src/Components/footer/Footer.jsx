@@ -1,14 +1,14 @@
-import "./footer.css"
+import { Container } from "./styles"
 
 
 export const Footer = () => {
 
   return(
-    <footer>
+    <Container>
       
     <div> Sandro Fernandes </div> 
     <div>Desenvolvedor Front-End</div>
     
-    </footer>
+    </Container>
   )
 }

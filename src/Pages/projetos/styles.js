@@ -1,15 +1,17 @@
-.projetos {
+import styled from "styled-components";
+
+export const Container = styled.section`
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0px 20px 0px;
+  justify-content: center;
   width: 100vw;
-  height: 100%;
+  min-height: 100vh;
   animation-name: projetos;
   animation-duration: 2s;
-}
 
-@keyframes projetos {
+  @keyframes projetos {
   from {
     width: 0vw;
     
@@ -20,9 +22,9 @@
     }
 }
 
-.projetos h1 {
+ h1 {
   border-bottom: 2px solid green;
-  margin-bottom: 20px;
+  margin: 90px 0px 20px 0px;
 }
 
 .projetos-container {
@@ -34,27 +36,21 @@
   
 }
 
-.projetos-container li {
+`
+export const Itens = styled.li`
  width: 300px;
  height: 440px;
- border: 1px solid green;
+ border: 1px solid ${({ theme }) => theme.colors.borderProject};
  display: flex;
  flex-direction: column;
- 
  align-items: center;
  background-color: black;
  border-radius: 10px;
  margin:  10px;
-
  position: relative;
+ box-shadow: 0 4px 4px -2px ${({ theme }) => theme.colors.primaryColor} ;
 
-}
-
-
-
-
-
-.projetos-container img {
+img {
   width: 100%;
   height: 85%;
   border-radius: 10px 10px 0px 0px;
@@ -65,7 +61,7 @@
   
 }
 
-.projetos .saiba-mais-card {
+ .saiba-mais-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,36 +75,34 @@
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px 10px 0px 0px;
 }
-.projetos .saiba-mais-card button {
+.saiba-mais-card button {
  width: 50px;
  height: 50px;
  border-radius: 25px;
  
 }
 
-.projetos .saiba-mais-card div { 
+.saiba-mais-card div { 
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  
 }
 
-
-.projetos .saiba-mais-card h1 {
+.saiba-mais-card h1 {
   border-bottom: 1px solid green;
   display: inline;
   font-size: 17px;
   
 }
 
-.projetos .saiba-mais-card p {
+.saiba-mais-card p {
   width: 70%;
   
 }
 
 
-.projetos .buttons {
+.buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -117,7 +111,7 @@
   
 }
 
-.projetos-container button {
+ button {
   background-color: transparent;
   outline: none;
   width: 50px;
@@ -132,10 +126,7 @@
   
 }
 
-
-
-
-.projetos-container button:hover {
+ button:hover {
   background-color: green;
  
   transition: 0.7s;
@@ -147,13 +138,12 @@
   
 }
 
-
-
-
 .buttons svg {
   font-size: 25px;
   
 }
+
+`
 
 
 

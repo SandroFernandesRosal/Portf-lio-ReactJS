@@ -1,31 +1,25 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Home } from "./Pages/index/Home";
 import { Sobre } from "./Pages/sobre/Sobre";
-import { Header } from "./header/Header";
+import { Header } from "./Components/header/Header";
 import { Contato } from "./Pages/contato/Contato";
 import { Projetos } from "./Pages/projetos/Projetos";
 import { Light } from "./Light";
-import { usePersistedState } from "./usePersistedState";
-import { Footer } from "./footer/Footer";
 
-export const Rotas = () => {
+import { Footer } from "./Components/footer/Footer";
+import { useState } from "react";
+
+export const Rotas = ({handleChangeTheme, theme}) => {
  
   
-  const [theme , setTheme] = usePersistedState(false)
-   
-  const mudarTema = () => {
-    
-    theme === false ? setTheme(true) : setTheme(false)
-
-  }
 
   return(
 <>
     <BrowserRouter >
 
-      {theme && <Light />}
       
-      <Header mudar={mudarTema} tema={theme}/>
+      
+      <Header handleChangeTheme={handleChangeTheme} theme={theme}/>
       
         <Routes>
           <Route element = {<Home />}  path="/" exact />

@@ -1,18 +1,28 @@
-import React from 'react'
-import { Rotas } from './Rotas'
-import './App.css'
+import React from 'react';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./Themes/GlobalStyles"
+import { Rotas } from './Rotas';
+import { dark } from "./Themes/dark";
+import { light } from "./Themes/light";
+import  usePersistedState  from "./Hooks/usePersistedState"
 
 function App() {
   
+  const [ theme, setTheme ] = usePersistedState('theme', dark);
+  
+  const handleChangeTheme = () => {
+    setTheme(theme.title === 'dark' ? light : dark);   
+  }
  
-
   return (
   
-    <div className="App" >
+    <ThemeProvider theme={theme} >
+
+      <GlobalStyles />
       
-    <Rotas />
+      <Rotas handleChangeTheme={handleChangeTheme} theme={theme} />
    
-    </div>
+    </ThemeProvider>
   
   )
 }

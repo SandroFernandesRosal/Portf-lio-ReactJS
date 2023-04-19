@@ -1,4 +1,4 @@
-import "./projetos.css"
+import { Container } from "./styles"
 
 import { DataProjetos } from "./DataProjeto"
 
@@ -12,15 +12,16 @@ export const Projetos = () => {
   
 
   return(
-    <section className="projetos">
+    <Container>
+
     <h1>Meus Projetos</h1>
     
     <ul className="projetos-container">
-
+    
     {DataProjetos.map((projeto, index) => <ProjetosItem key={index} projeto={projeto} />)}
     
     </ul>
 
-    </section>
+    </Container>
   )
 }

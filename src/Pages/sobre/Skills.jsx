@@ -1,13 +1,14 @@
 
-import {FaHtml5, FaCss3, FaReact, FaGithub, FaGitSquare, FaNodeJs} from "react-icons/fa"
-import {IoLogoJavascript} from "react-icons/io"
+import {FaHtml5, FaCss3, FaReact, FaGithub, FaGitSquare, FaNodeJs} from "react-icons/fa";
+import {IoLogoJavascript} from "react-icons/io";
+import { ContainerSkills } from "./styles";
 
 
 export const Skills = ({saibaMais, html, css, javascript,react, node, github, git}) => {
 
   
   return(
-    <div className="container-skills"> 
+    <ContainerSkills> 
     <h2>Habilidades</h2>
 
     <div className="skills">
@@ -41,6 +42,6 @@ export const Skills = ({saibaMais, html, css, javascript,react, node, github, gi
     </div>
 
     </div>
-</div>
+</ContainerSkills>
   )
 }
