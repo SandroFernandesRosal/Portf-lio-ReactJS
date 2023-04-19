@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import { Sociais } from "../../Components/header/Sociais";
+import { Sociais } from "../../Components/Sociais/Sociais";
 import { Link } from "react-router-dom";
 import Download from "./SandroFernandes.pdf";
 import FotoPerfil from "../../Components/header/img/foto-perfil.png";

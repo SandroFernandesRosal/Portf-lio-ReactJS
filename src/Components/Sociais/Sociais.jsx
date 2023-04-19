@@ -1,11 +1,11 @@
 import {FaFacebook, FaGithub, FaLinkedin, FaWhatsapp} from "react-icons/fa";
-import { SociaisContainer } from "../../Pages/index/styles";
+import { Container } from "./styles";
 
 
 export const Sociais = () => {
 
   return(
-    <SociaisContainer>
+    <Container>
 
         <a href="https://api.whatsapp.com/send?phone=5521969501614" target="blank">
           <FaWhatsapp />
@@ -24,6 +24,6 @@ export const Sociais = () => {
         </a>
     
     
-    </SociaisContainer>
+    </Container>
   )
 }

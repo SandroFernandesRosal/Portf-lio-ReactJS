@@ -142,7 +142,7 @@ margin-top: 40px;
   max-width: 390px;
   height: 310px;
   
-  color: white;
+  color: ${({ theme }) => theme.colors.primaryTextColor};
   border-radius: 10px;
   
   display: flex;
@@ -164,26 +164,7 @@ margin-top: 40px;
   border: 2px solid green;
 }
 
- .sociais  {
- width: 100%;
- display: flex;
- justify-content: space-around;
- text-align: center;
-}
-
-
-
-
-.sociais svg {
-  font-size: 35px;
-  cursor: pointer;
  
-  
-}
-
-.sociais svg:hover {
-  color: green;
-}
 
 @media (min-width: 700px) {
   display: none;
