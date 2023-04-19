@@ -81,9 +81,9 @@ export const Container = styled.section`
 
 @media (min-width: 800px) {
  
-  padding-top: 10;
-    flex-direction: row;
-    align-items: center;
+  padding-top: 0;
+  flex-direction: row;
+  align-items: center;
     
   .formation {
     flex:1;
@@ -91,9 +91,7 @@ export const Container = styled.section`
     
   }
 
-  .formation li {
-  
-   
+  .formation li {  
    height: 55px;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./Themes/GlobalStyles"
-import { Rotas } from './Rotas';
+import { Rotas } from "./Routes/Rotas"
 import { dark } from "./Themes/dark";
 import { light } from "./Themes/light";
 import  usePersistedState  from "./Hooks/usePersistedState"

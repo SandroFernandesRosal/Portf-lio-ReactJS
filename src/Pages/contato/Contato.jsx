@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react"
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import "./contato.css"
+import { Container } from "./styles";
 import { Sociais } from "../../Components/header/Sociais";
 import {BiHappyAlt} from "react-icons/bi"
 
@@ -50,28 +50,29 @@ export const Contato = () => {
   return(
     <>
     
-    <section className="contato">
+    <Container>
       
-    {alert && <div className="alert-email">Mensagem enviada com sucesso! <BiHappyAlt /></div>}   
+        {alert && <div className="alert-email">Mensagem enviada com sucesso! <BiHappyAlt /></div>}   
 
-    <h1 className="h2-contato">Entre em contato</h1>
+        <h1 className="h2-contato">Entre em contato</h1>
 
-      <Sociais />
+          
 
-      <form ref={form} onSubmit={onSubmit}  name="form">
-        <input required={true}  type="text" name="nome" id="nome" placeholder="Digite seu nome" value={nameInput} onChange={(e) => setNameInput(e.target.value)}  />
+          <form ref={form} onSubmit={onSubmit}  name="form">
+            <Sociais />
+            <input required={true}  type="text" name="nome" id="nome" placeholder="Digite seu nome" value={nameInput} onChange={(e) => setNameInput(e.target.value)}  />
 
-        <input  required={true} type="email" name="email" id="email" placeholder="Digite seu email" value={emailInput} onChange={(e) => setEmailInput(e.target.value)} />
+            <input  required={true} type="email" name="email" id="email" placeholder="Digite seu email" value={emailInput} onChange={(e) => setEmailInput(e.target.value)} />
 
-        <input required={true} type="text" name="assunto" id="assunto" placeholder="Digite o assunto" value={assuntoInput} onChange={(e) => setAssuntoInput(e.target.value)}/>
+            <input required={true} type="text" name="assunto" id="assunto" placeholder="Digite o assunto" value={assuntoInput} onChange={(e) => setAssuntoInput(e.target.value)}/>
 
-        <textarea required={true} name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" value={textInput} onChange={(e) => setTextInput(e.target.value)} ></textarea>
+            <textarea required={true} name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" value={textInput} onChange={(e) => setTextInput(e.target.value)} ></textarea>
 
-        <button type="submit" name="submit">Enviar</button>
-      </form>
+            <button type="submit" name="submit">Enviar</button>
+          </form>
 
       
-    </section>
+    </Container>
 
     </>
   )

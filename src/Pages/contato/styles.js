@@ -1,17 +1,15 @@
+import styled from "styled-components";
 
-
-.contato {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center ;
-  height: 100vh;
-  width: 100vw;
-  margin: 30px 0px 0px 0px;
-  animation-name: contato;
-  animation-duration: 2s;
-  
-}
+export const Container = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+height: 100vh;
+width: 100vw;
+animation-name: contato;
+animation-duration: 2s;
+padding-top: 50px;
 
 @keyframes contato {
   from {
@@ -24,26 +22,18 @@
     }
 }
 
-.contato h1 {
-  margin-bottom: 20px;
+h1 {
+  margin-bottom: 10px;
   border-bottom: 2px solid green;
   
 }
 
-.contato .sociais {
-  width: 75%;
-  max-width: 500px;
-  display: flex;
-  justify-content: space-around;
-}
 
-
-
-.contato form {
+form {
   display: flex;
   flex-direction: column;
  
-  background-color: black;
+  background-color: ${({ theme }) => theme.colors.primaryBg};
   width: 75%;
   max-width: 500px;
   border-radius: 15px 0px 15px 0px;
@@ -53,11 +43,11 @@
   
 }
 
-.contato form input, textarea {
+form input, textarea {
  margin: 3px;
  padding: 5px;
  text-align: center;
- background-color: black;
+ background-color: ${({ theme }) => theme.colors.secundaryBg};
  color: white;
  border: 2px solid green;
  border-radius: 15px 0px 15px 0px;
@@ -66,28 +56,28 @@
  
 }
 
-.contato form input:focus, textarea:focus {
+form input:focus, textarea:focus {
   outline: none;
   
 }
 
-.contato textarea {
+textarea {
   font-size: 16px;
 }
 
-.contato form button {
+form button {
   width: 40%;
   height: 10%;
   margin:10px auto;
-  color: white;
-  background-color: black;
+  color: ${({ theme }) => theme.colors.primaryTextColor};
+  background-color: ${({ theme }) => theme.colors.secundaryBg};
   border-radius: 15px;
   border: 2px solid green;
   cursor: pointer;
   font-weight: 900;
 }
 
-.contato form button:hover {
+form button:hover {
 background-color: green;
 color: white;
 }
@@ -116,3 +106,5 @@ color: white;
   font-size: 30px;
   color: green;
 }
+
+`

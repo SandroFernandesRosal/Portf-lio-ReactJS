@@ -11,4 +11,5 @@ export const Container = styled.footer`
   font-size: 18px;
   font-weight: 900;
   color: white;
+  
 `
