@@ -110,10 +110,11 @@ li {
   margin: 5px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: ${({ theme }) => theme.colors.primaryTextColor};
   text-shadow: 1px 1px 1px green;
   width: 100%;
   padding: 0 20px;
+  
   
 }
 li:hover {
@@ -130,47 +131,6 @@ li:hover {
 }
 `
 
-
-export const CardContainer = styled.div`
-display: flex;
-justify-content: center;
-margin-top: 40px;
-
-
-.card-perfil {
-  width: 65%;
-  max-width: 390px;
-  height: 310px;
-  
-  color: ${({ theme }) => theme.colors.primaryTextColor};
-  border-radius: 10px;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  border: 1px solid green;
-  
-}
-
-.card-perfil p {
-  text-align: center;
-}
-
-.card-perfil img {
-  width: 60%;
-  border-radius: 50%;
-  border: 2px solid green;
-}
-
- 
-
-@media (min-width: 700px) {
-  display: none;
-}
-
-`
 
 
 
