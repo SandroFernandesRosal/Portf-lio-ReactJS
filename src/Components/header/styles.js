@@ -115,12 +115,17 @@ li {
   width: 100%;
   padding: 0 20px;
   
-  
+ 
 }
+
+
+
+
 li:hover {
   transition:  0.5s;
   transform: scale(1.17);
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 1px 1px 1px black;
+  
 }
 a {
   color: white;
