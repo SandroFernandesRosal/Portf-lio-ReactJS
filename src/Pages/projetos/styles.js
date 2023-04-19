@@ -39,7 +39,7 @@ export const Container = styled.section`
 `
 export const Itens = styled.li`
  width: 300px;
- height: 440px;
+ height: 550px;
  border: 1px solid ${({ theme }) => theme.colors.borderProject};
  display: flex;
  flex-direction: column;
@@ -49,6 +49,7 @@ export const Itens = styled.li`
  margin:  10px;
  position: relative;
  box-shadow: 0 4px 4px -2px ${({ theme }) => theme.colors.primaryColor} ;
+ color: white;
 
 img {
   width: 100%;
